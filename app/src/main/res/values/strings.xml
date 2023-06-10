@@ -2,4 +2,9 @@
     <string name="app_name">Weather app</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_20_07_2022_13_00">20/07/2022 13:00</string>
+    <string name="tbilisi">Tbilisi</string>
+    <string name="_20">20℃</string>
+    <string name="sunny">Sunny</string>
+    <string name="_34_15">34℃/15℃</string>
 </resources>
