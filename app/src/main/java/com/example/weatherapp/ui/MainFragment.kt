@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TableLayout
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
@@ -38,8 +37,10 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         checkPermission()
         init()
+
     }
 
     private fun init() = with(binding){
@@ -47,7 +48,7 @@ class MainFragment : Fragment() {
         vp.adapter = adapter
         TabLayoutMediator(tabLayout,vp){
             tab, pos -> tab.text = tList[pos]
-        }
+        }.attach()
 
     }
 
@@ -63,9 +64,11 @@ class MainFragment : Fragment() {
             pLauncher.launch(Manifest.permission.ACCESS_FINE_LOCATION)
         }
     }
+
     companion object{
         @JvmStatic
        fun newInstance() = MainFragment()
     }
+
 
 }
