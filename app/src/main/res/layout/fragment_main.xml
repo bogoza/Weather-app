@@ -87,13 +87,14 @@
                 android:fontFamily="@font/aubrey"
                 android:text="@string/sunny"
                 android:textColor="@color/white"
-                android:textSize="16sp"
+                android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvCurrentTemp" />
 
             <TextView
                 android:id="@+id/tvMaxMin"
+                android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/aubrey"

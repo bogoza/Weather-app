@@ -46,4 +46,8 @@ class HoursFragment : Fragment() {
         @JvmStatic
         fun newInstance() = HoursFragment()
     }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }
