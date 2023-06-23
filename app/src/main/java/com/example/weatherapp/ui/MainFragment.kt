@@ -1,5 +1,4 @@
 package com.example.weatherapp.ui
-
 import android.Manifest
 import android.os.Bundle
 import android.util.Log
@@ -152,9 +151,6 @@ class MainFragment : Fragment() {
             weatherItem.hours
         )
         model.liveDataCurrent.value = item
-        Log.d("MyLog", "max: ${item.maxTemp}")
-        Log.d("MyLog", "min: ${item.minTemp}")
-        Log.d("MyLog", "Time: ${item.hours}")
 
     }
     companion object {
